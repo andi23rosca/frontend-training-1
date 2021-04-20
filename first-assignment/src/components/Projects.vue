@@ -1,5 +1,5 @@
 <template>
-  <div v-if="projectsState === 'none' || projectsState === 'loaded'">
+  <div v-if="usersState !== 'loading'">
     <li v-for="project in projects" :key="project">{{ project }}</li>
   </div>
   <div v-else>Loading...</div>
