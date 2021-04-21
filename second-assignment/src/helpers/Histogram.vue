@@ -28,7 +28,7 @@ export default defineComponent({
       // X axis: scale and draw:
       var x = d3
         .scaleLinear()
-        .domain([0, Math.max(...data)]) // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+        .domain([0, 13]) // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
         .range([0, width]);
       svg
         .append("g")

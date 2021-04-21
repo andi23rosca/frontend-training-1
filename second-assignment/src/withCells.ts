@@ -30,3 +30,5 @@ export function withCells() {
     gating,
   };
 }
+
+export type CellsProvider = ReturnType<typeof withCells>;
